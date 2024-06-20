@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/1718879611-trimmy-floating-donuts.gif">
+</head>
+<body>
+
+    <!-- LANDING PAGE -->
+    <section>
+        <header class="header">
+        <div class="main-container">
+        <nav class="nav-container">
+                <ul class="nav" id="navbar">
+                    <li class="items"><img id="logo" src="assets/floating-donuts.gif" alt="donuts gif logo"></li>
+                    <a href="#characters"><li class="items">Characters</li></a>
+                    <a href="#generator"><li class="items">Generator</li></a>
+                    <a href="#contact"><li class="items">Contact</li></a>
+                </ul>
+        </nav>
+
+        <div class="landing-page-container">
+            <div class="container-txt">
+                <h1 class="main-txt">Welcome to cyber Springfield</h1>
+                <p class="secundary-txt">Here you'll find some of my favourite characters, quotes and frames of the iconic animated series: Family Guy &#128521;</p>
+                <a href="https://www.youtube.com/watch?v=BARjPuUN36Y" target="_blank"><button class="button1">Click Here</button></a>
+            </div>
+
+            <div class="img-container">
+                <img class="img1" src="assets/homer-hiding.gif" alt="homer simpsons hiding">
+            </div>
+        </div>
+    </div>
+    </header>
+</section>
+
+    <!-- SECOND SECTION   -->
+
+    <a id="characters"></a>
+<section>
+    <div class="page-2-container">
+        <div class="gallery-container">
+            <h2 class="h2">My favourite characters</h2>
+            <div class="gallery">
+                <div class="pics-container">
+                    <img class="pics"  id="pic1" src="assets/bart-simpsons.gif" alt="bart simpsons">
+                    <p class="subtext">Bart's rebellious spirit and clever antics make him endlessly entertaining and relatable.</p>
+                </div>
+                <div class="pics-container">
+                    <img class="pics" src="assets/krusty-the-clown-the-simpsons.gif" alt="krusty the clown">
+                    <p class="subtext">Krusty's chaotic humor and complex personality add depth and hilarity to the show.</p>
+                </div>
+                <div class="pics-container">
+                    <img class="pics" src="assets/sideshow-bob.gif" alt="sideshow bob">
+                    <p class="subtext">Sideshow Bob's sophisticated villainy and dramatic flair make him an unforgettable and compelling character.</p>
+                </div>
+                <div class="pics-container">
+                    <img class="pics" src="assets/santa'slittlehelper.gif" alt="santa's little helper">
+                    <p class="subtext">Simpliy Santa's little helper.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+    <!-- THIRD SECTION   -->
+
+<section>
+    <div class="page-3-container">
+        <div class="text-quote">
+            <p><i>"I've learned that life is one crushing defeat after another until you just wish <span class="flanders">Flanders</span> was dead."</i></p>
+        </div>
+        <div class="subquote">
+            <b> Homer Simpson</b>
+        </div>
+    </div>
+</section>    
+
+<!-- SIMPSONS GENERATOR -->
+
+<a id="generator"></a>
+<section>
+    <div class="container">
+        <div class="container-txt-btn">
+            <h1>The Simpsons Character Generator</h1>
+            <p class="subtext-generator">Discover the Simpsons character that belongs to you the most by clicking the button right here!</p>
+            <button id="generate-btn">Generate</button>
+        </div>
+        <div id="character-display" class="hidden">
+            <img id="character-image" src="" alt="">
+            <h2 id="character-name"></h2>
+            <p id="character-description"></p>
+    </div>
+</div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta-section">
+    <div class="cta-container">
+    <div class="call-to-action">
+        <p class="cta-main-text">Test!</p>
+        <p class="cta-subtext">This website is just a test, don't bother clicking the button</p>
+    </div>
+    <a href="https://i.imgflip.com/4ismnp.jpg"><button class="button2">Don't click</button></a>
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<a id="contact"></a>
+<footer>
+    <div>Made with &#128420; by Marco</div>
+</footer>
+
+<script>
+    const characters = [
+    {
+        name: "Homer Simpson",
+        image: "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png",
+        description: "Congratulations, you're the main character, you're bald, dumb and an alcoholic, good job!"
+    },
+    {
+        name: "Marge Simpson",
+        image: "https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png",
+        description: "You got Marge, how lucky? You gotta share the bed with Homer now."
+    },
+    {
+        name: "Bart Simpson",
+        image: "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png",
+        description: "Bart, of course. I mean your grades match perfectly."
+    },
+    {
+        name: "Lisa Simpson",
+        image: "https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png",
+        description: "Oh... Lisa, you must be the smart one."
+    },
+    {
+        name: "Maggie Simpson",
+        image: "https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png",
+        description: "Maggie! If you only could talk."
+    },
+    {
+        name: "Santa's little Helper",
+        image: "https://upload.wikimedia.org/wikipedia/en/8/8a/SantasLittleHelper.png",
+        description: "Woof woof!."
+    },
+    {
+        name: "Grampa Simpson",
+        image: "https://upload.wikimedia.org/wikipedia/en/3/3e/Abe_Simpson.png",
+        description: "Grandpa, you're not a communist, you may be a liar, a pig, an idiot, a communist, but you're *not* a porn star!"
+    },
+    {
+        name: "Krusty the Clown",
+        image: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Krustytheclown.png/220px-Krustytheclown.png",
+        description: "Krusty the Clown! Perfect match for you."
+    },
+    {
+        name: "Ned Flanders",
+        image: "https://upload.wikimedia.org/wikipedia/en/8/84/Ned_Flanders.png",
+        description: "It's time to pray!"
+    },
+    {
+        name: "Mr. Burns",
+        image: "https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png",
+        description: "You got the coolest villain. Smile."
+    }
+];
+
+document.getElementById('generate-btn').addEventListener('click', function() {
+    const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+    document.getElementById('character-image').src = randomCharacter.image;
+    document.getElementById('character-name').innerText = randomCharacter.name;
+    document.getElementById('character-description').innerText = randomCharacter.description;
+    document.getElementById('character-display').classList.remove('hidden');
+});
+
+var lastScrollTop; // This Varibale will store the top position
+
+navbar = document.getElementById('navbar'); // Get The NavBar
+
+window.addEventListener('scroll',function(){
+ //on every scroll this funtion will be called
+  
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  //This line will get the location on scroll
+  
+  if(scrollTop > lastScrollTop){ //if it will be greater than the previous
+    navbar.style.top='-120px';
+    //set the value to the negetive of height of navbar 
+  }
+  
+  else{
+    navbar.style.top='0';
+  }
+  
+  lastScrollTop = scrollTop; //New Position Stored
+});
+
+</script>
+
+</body>
+</html>

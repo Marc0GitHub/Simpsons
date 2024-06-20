@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@font-face {
+    font-family: Simpsonfont;
+    src: url(Simpsonfont\ DEMO.otf);
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Simpsonfont, cursive;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    white-space: nowrap;
+    font-weight: 800;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: #ff81c1;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80dvw;
+    
+}
+
+.items {
+    font-size: 1.2rem;
+    font-family: "Indie Flower", cursive;
+
+}
+
+.items:nth-of-type(1) {
+    margin-right: auto;
+
+}
+
+.header {
+    background-image: url("assets/homer-bush-transformed-crop.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.main-txt {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 1.5px ;
+    animation: color-change 5s infinite;}
+
+@keyframes color-change {
+    0% { color: #ff81c1;}
+    50% { color: #FFD90F;}
+    100% { color: #ff81c1;}
+}
+
+.secundary-txt {
+    font-size: 14px;
+    font-family: "Indie Flower", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.button1 {
+    background-color: #FFD90F;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    margin-top: .5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button1:hover {
+    background-color: #ff81c1;
+    text-shadow: 0px 0px 6px ;
+}
+
+.landing-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.container-txt {
+    width: 35dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-around;
+}
+
+.img1 {
+max-width: 100%;
+}
+
+.img-container {
+height: fit-content;
+}
+
+#logo {
+    width: 100px;
+}
+
+/* Page two */
+
+.page-2-container {
+    min-height: 25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+
+.h2 {
+    text-align: center;
+    color: #ff81c1;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pics-container {
+    display: flex;  
+    flex-direction: column;  
+    max-width: 200px;
+    gap: .3rem;
+}
+
+.pics {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: solid 4px #FFD90F;
+    border-radius: 18px;
+}
+
+#pic1 {
+    object-position: bottom;
+}
+
+.subtext {
+    font-family: "Indie Flower", cursive;
+    font-weight: 600;
+    font-size: .8rem;
+    text-align: center;
+    color: grey;
+}
+
+/* Page three */
+
+.flanders {
+    color: #17c71f;
+}
+
+.page-3-container {
+    background-color: #e5e7eb;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-3-container:nth-last-child() {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.text-quote {
+    width: 50dvw;
+    text-align: left;
+
+}
+
+.page-3-container {
+    background-color: #FFD90F;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 5rem;
+}
+
+
+
+
+.text-quote {
+    width: 65dvw;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1f2937;
+    padding-top: 5rem;
+
+}
+
+.subquote {
+    width: 65dvw;
+    text-align: right;
+}
+
+/* CALL TO ACTION */
+
+.cta-container {
+    background-color: #ff81c1;
+    width: 60dvw;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    color: white;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.button2 {
+    white-space: nowrap;
+    border: solid 2px #f9faf8;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    font-weight: 600;
+}
+
+.cta-main-text{
+    font-weight: bold;
+}
+
+.cta-subtext {
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+/* SIMPSONS GENERATOR */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+
+#generate-btn {
+    background-color: #FFD90F;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    margin-top: .5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#generate-btn:hover {
+    background-color: #ff81c1;
+    text-shadow: 0px 0px 6px ;
+}
+
+#character-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.container-txt-btn {
+    width: 80dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subtext-generator {
+    font-family: "Indie Flower", cursive;
+    font-weight: 600;
+    color: #818181;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #FFD90F;
+   color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30dvh;
+    font-size: small;
+}
+
+/* FIXED NAVBAR */
+
+#navbar{
+    display: flex;
+    width: 77dvw;
+    position:fixed;
+    transition: .5s;
+  }
+
+#navbar .items {
+    text-shadow: 0px 1px 4px #101010;
+}
+
+
+#navbar.nav #logo{
+    
+    margin-right: auto;
+}
+
+
+
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 500px) {
+    .img1 {
+        position: relative;
+        width: 500px;
+        top: 100px;
+        left: 0px;
+    }
+
+    #logo {
+        width: 50px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery-container {
+        padding-bottom: 2rem;
+    }
+
+    .cta-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: .5rem;
+        padding-left: .8rem;
+        padding-right: .8rem;
+        padding-bottom: .5rem;
+    }
+
+    .call-to-action {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+   
+ 
+}
+
+
+@media screen and (max-width: 700px) {
+    .cta-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: .5rem;
+        padding-left: .8rem;
+        padding-right: .8rem;
+        padding-bottom: .5rem;
+    }
+
+    .call-to-action {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+}
